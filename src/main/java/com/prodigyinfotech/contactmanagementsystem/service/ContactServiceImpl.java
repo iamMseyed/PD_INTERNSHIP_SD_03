@@ -20,12 +20,10 @@ public class ContactServiceImpl implements  ContactService{
     }
 
     @Override
-    public ContactDTO saveContact(ContactDTO contactDTO){
+    public void saveContact(ContactDTO contactDTO){
         Contact contact = new Contact();
         modelMapper.map(contactDTO,contact); //map(dto obj, entity obj)
-        Contact savedContact = contactRepository.save(contact);
-
-        return modelMapper.map(savedContact, ContactDTO.class);
+        contactRepository.save(contact);
     }
 
     @Override
