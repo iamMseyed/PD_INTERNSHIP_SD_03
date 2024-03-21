@@ -1,6 +1,6 @@
 # Contact Management System
 
-This is a simple Spring Boot application for managing contacts. It provides CRUD (Create, Read, Update, Delete) operations for contacts.
+A simple Spring Boot application for managing contacts. It provides CRUD (Create, Read, Update, Delete) operations for contacts.
 
 ## Features
 
